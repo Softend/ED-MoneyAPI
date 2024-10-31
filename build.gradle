@@ -10,8 +10,8 @@ repositories {
     mavenCentral()
 }
 
-sourceCompatibility = '16'
-sourceCompatibility = '16'
+sourceCompatibility = '17'
+targetCompatibility = '17'
 
 dependencies {
     compileOnly "org.projectlombok:lombok:1.18.24"
