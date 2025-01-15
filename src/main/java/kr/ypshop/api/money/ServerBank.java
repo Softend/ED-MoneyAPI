@@ -6,6 +6,7 @@ import kr.ypshop.api.money.exception.ConflictBankException;
 import java.math.BigInteger;
 import java.util.List;
 import java.util.UUID;
+import java.util.function.Consumer;
 
 public interface ServerBank {
 
@@ -43,4 +44,6 @@ public interface ServerBank {
      * @return 모든 PlayerBank
      */
     List<PlayerBank> getBanks();
+
+    void forEach(Consumer<PlayerBank> consumer);
 }
